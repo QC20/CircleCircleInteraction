@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Canvas Boilerplate</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0; /* Set your desired background color */
+        }
+        canvas {
+            width: 100vw;
+            height: 100vh;
+            display: block;
+            background-color: #ffffff; /* Set your desired canvas background color */
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <!-- Your scripts go here -->
+    <script>
+        // JavaScript code for interacting with the canvas can go here
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Example: Draw a rectangle on the canvas
+        ctx.fillStyle = '#000000'; // Set fill color to black
+        ctx.fillRect(50, 50, 100, 100); // Draw a black rectangle at (50, 50) with width 100 and height 100
+    </script>
+    <script src="src/javascript/sketch.js"></script>
+</body>
+</html>
